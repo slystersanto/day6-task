@@ -1,0 +1,38 @@
+//function using anonymous 
+
+var arr=[12,13,14,15];
+function foo(arr){
+  for(var i=0;i<arr.length;i++){
+    if(arr[i]%2!=0){
+      console.log(arr[i]);
+    }
+  }
+}
+foo(arr);
+
+//Convert all the strings to title caps in a string array
+ 
+
+function titleCase(str) {
+  return str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
+}
+
+console.log(titleCase('guvi geek'));
+
+//Sum of all numbers in an array
+
+var sum=function(a,b){
+  return a+b
+}
+console.log(sum(11,11));
+
+//Return all the palindromes in an array
+
+let str = "civic";
+let strReverse = str.split("").reverse().join("");
+
+if (str === strReverse) {
+  console.log("The string is a palindrome");
+} else {
+  console.log("NOT a palindrome");
+}
